@@ -1,0 +1,31 @@
+.hidden {
+  display: none;
+}
+
+.days {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.day-header {
+    display: flex;
+    justify-content: space-between;
+}
+.day {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  min-height: 5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .days {
+    flex-direction: row;
+  }
+
+  .day {
+    flex: 1 1 0;
+    width: 0;
+  }
+}
